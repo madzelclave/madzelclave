@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="g">
+      <stop stop-color="#fff0a4"/>
+      <stop offset=".5" stop-color="#e39b20"/>
+      <stop offset="1" stop-color="#80520a"/>
+    </linearGradient>
+    <clipPath id="crop">
+      <circle cx="250" cy="250" r="180"/>
+    </clipPath>
+  </defs>
+
+  <!-- Lingkaran luar emas -->
+  <circle cx="250" cy="250" r="224" fill="#070a10" stroke="url(#g)" stroke-width="12"/>
+  
+  <!-- Lingkaran dalam -->
+  <circle cx="250" cy="250" r="190" fill="none" stroke="#30445e" stroke-width="3"/>
+
+  <!-- FOTO MADZ DI TENGAH -->
+  <image xlink:href="madz.png" x="70" y="70" width="360" height="360" clip-path="url(#crop)" preserveAspectRatio="xMidYMid slice"/>
+</svg>
