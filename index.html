@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05080d">
+    <meta name="description" content="Madzelclaive Developer — Strategy of Leaders">
+    <!-- FIX: rel icon harusnya 'icon' bukan 'stylesheet' -->
+    <link rel="icon" href="md.png" type="image/png">
+    
+    <title>Beranda — Madzelclaive Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <img src="md.png" alt="Madzelclaive Logo">
+            <div>
+                <strong>Madzelclaive</strong>
+                <span>DEVELOPER INDONESIA</span>
+            </div>
+        </div>
+
+<nav class="nav">
+    <a href="index.html">
+      <i class="fas fa-home"></i><span>Beranda</span></a>
+      
+    <a href="game.html">
+      <i class="fas fa-gamepad"></i><span>Tentang Game</span></a>
+      
+    <a href="social.html">
+      <i class="fas fa-globe"></i><span>Sosial Media</span></a>
+      
+    <a href="contact.html">
+      <i class="fas fa-envelope"></i><span>Kontak</span></a>
+      
+    <a href="privacy.html">
+      <i class="fas fa-shield-alt"></i><span>Privacy Policy</span></a>
+</nav>
+
+        <div class="side-tools">
+            <button class="tool" id="themeBtn">
+                ☾ / ☀ <span>Theme</span>
+            </button>
+            
+            <button class="tool" id="musicBtn">
+                ♫ Music: ON
+            </button>
+            
+            <select class="tool" id="musicSelect">
+                <option value="assets/ambient-01.wav">Ambient Command</option>
+                <option value="assets/ambient-02.wav">Strategic Horizon</option>
+            </select>
+            
+            <div class="tool">
+                <span>Language</span>
+                <div class="lang">
+                    <button data-lang="id">ID</button>
+                    <button data-lang="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MOBILE HEADER -->
+    <div class="mobile-top">
+        <strong>Madzelclaive Developer</strong>
+        <button class="hamb" id="menuBtn">☰</button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <div class="page">
+            
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="reveal">
+                    <div class="kicker">MADZELCLAIVE DEVELOPER</div>
+                    <h1>STRATEGY OF<br>LEADERS</h1>
+                    <h2>Simulasi kepemimpinan negara yang mendekati dunia nyata.</h2>
+                    <p>
+                        Bangun negara, kelola ekonomi, buat keputusan politik, kembangkan teknologi, 
+                        dan hadapi krisis serta konflik dalam satu simulasi strategi.
+                    </p>
+               <div class="actions">
+                  <a class="btn" href="game.html">Jelajahi Game</a>
+                  <a  href="assets/Strategy of Leaders.apk" download class="btn secondary">
+                      Download Strategy of Leaders
+                  </a>
+              </div>
+                </div>
+
+                <div class="reveal">
+                    <img class="hero-logo" src="assets/game-logo.svg" alt="Strategy of Leaders">
+                </div>
+            </section>
+
+            <!-- STATS -->
+            <div class="stats reveal">
+                <div class="stat">
+                    <strong>70%</strong>
+                    <span>Version 2.10.0</span>
+                </div>
+                <div class="stat">
+                    <strong>50+</strong>
+                    <span>Core Systems</span>
+                </div>
+                <div class="stat">
+                    <strong>20</strong>
+                    <span>Language UI</span>
+                </div>
+                <div class="stat">
+                    <strong>∞</strong>
+                    <span>Scenario Potential</span>
+                </div>
+            </div>
+
+            <!-- GAME SYSTEM -->
+            <section class="section reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="kicker">GAME SYSTEM</div>
+                        <h2 data-i18n="game">Tentang Game</h2>
+                    </div>
+                    <p>
+                        Keputusan ekonomi, populasi, teknologi, pembangunan, diplomasi, 
+                        dan pertahanan dibuat saling terhubung.
+                    </p>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <strong>💰 Pajak & Ekonomi</strong>
+                        <p>Atur pajak, pemasukan, pengeluaran, investasi, dan arah ekonomi nasional.</p>
+                    </div>
+                    <div class="feature">
+                        <strong>👥 Populasi</strong>
+                        <p>Kelola populasi dan kondisi sosial.</p>
+                    </div>
+                    <div class="feature">
+                        <strong>🔬 Research</strong>
+                        <p>Kembangkan teknologi dan kemampuan baru.</p>
+                    </div>
+                    <div class="feature">
+                        <strong>🏗 Infrastruktur</strong>
+                        <p>Bangun fasilitas untuk perkembangan nasional.</p>
+                    </div>
+                    <div class="feature">
+                        <strong>🛡 Pertahanan</strong>
+                        <p>Rekrut tentara dan kelola pertahanan.</p>
+                    </div>
+                    <div class="feature">
+                        <strong>📈 Inflasi</strong>
+                        <p>Inflasi memengaruhi keputusan ekonomi.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <span>© <span id="year"></span> Madzelclaive Developer</span>
+            <span>Strategy of Leaders • Indonesia</span>
+        </footer>
+    </main>
+
+    <!-- TOAST & AUDIO -->
+    <div id="toast" class="toast"></div>
+    <audio id="bgMusic" loop preload="auto" src="assets/ambient-01.wav"></audio>
+
+    <script src="script.js"></script>
+    <script>
+  const currentPage = window.location.pathname.split("/").pop(); 
+  const navLinks = document.querySelectorAll(".nav a");
+  
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if(linkPage === currentPage || (currentPage === "" && linkPage === "index.html")){
+      link.classList.add("active");
+    }
+  });
+
+  // biar tahun footer jalan
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
