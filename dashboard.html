@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#05080d">
+
+    <!-- SEO -->
+    <meta
+        name="description"
+        content="Dashboard resmi Strategy of Leaders, game simulasi strategi kepemimpinan negara yang dikembangkan oleh Madzelclaive Developer."
+    >
+
+    <meta name="author" content="Madzelclaive Developer">
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="https://madzelclave.netlify.app/md.png"
+    >
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madzelclave.netlify.app/dashboard.html">
+
+    <meta
+        property="og:title"
+        content="Dashboard — Madzelclaive Developer"
+    >
+
+    <meta
+        property="og:description"
+        content="Dashboard dan informasi sistem Strategy of Leaders."
+    >
+
+    <meta
+        property="og:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+
+    <meta
+        property="og:site_name"
+        content="Madzelclaive Developer"
+    >
+
+    <!-- TWITTER -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Dashboard — Madzelclaive Developer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Dashboard dan informasi sistem Strategy of Leaders."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+    <title>
+        Dashboard — Madzelclaive Developer
+    </title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <!-- BRAND -->
+        <div class="brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <div>
+                <strong>Madzelclaive</strong>
+                <span>DEVELOPER INDONESIA</span>
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>Beranda</span>
+            </a>
+
+            <a href="game.html">
+                <i class="fas fa-gamepad"></i>
+                <span>Tentang Game</span>
+            </a>
+
+            <a
+                href="dashboard.html"
+                class="active"
+            >
+                <i class="fas fa-desktop"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>Kontak</span>
+            </a>
+
+            <a href="privacy.html">
+                <i class="fas fa-shield-alt"></i>
+                <span>Privacy Policy</span>
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR TOOLS -->
+        <div class="side-tools">
+
+            <button
+                class="tool"
+                id="themeBtn"
+                type="button"
+            >
+                <span>
+                    ☾ / ☀
+                </span>
+
+                <span>
+                    Theme
+                </span>
+            </button>
+
+
+            <button
+                class="tool"
+                id="musicBtn"
+                type="button"
+            >
+                <i class="fas fa-music"></i>
+
+                <span>
+                    Music: ON
+                </span>
+            </button>
+
+
+            <select
+                class="tool"
+                id="musicSelect"
+                aria-label="Pilih musik"
+            >
+
+                <option value="assets/ambient-01.wav">
+                    Ambient Command
+                </option>
+
+                <option value="assets/ambient-02.wav">
+                    Strategic Horizon
+                </option>
+
+            </select>
+
+
+            <div class="tool language-tool">
+
+                <span>
+                    <i class="fas fa-globe"></i>
+                    Language
+                </span>
+
+
+                <div class="lang">
+
+                    <button
+                        type="button"
+                        data-lang="id"
+                        class="active"
+                    >
+                        ID
+                    </button>
+
+                    <button
+                        type="button"
+                        data-lang="en"
+                    >
+                        EN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MOBILE HEADER
+    ========================== -->
+    <header class="mobile-top">
+
+        <div class="mobile-brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <strong>
+                Madzelclaive Developer
+            </strong>
+
+        </div>
+
+
+        <button
+            class="hamb"
+            id="menuBtn"
+            type="button"
+            aria-label="Buka menu"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main class="main">
+
+        <div class="page dashboard-page">
+
+
+            <!-- =========================
+                 DASHBOARD HERO
+            ========================== -->
+            <section class="dashboard-hero reveal">
+
+                <div class="dashboard-hero-content">
+
+                    <div class="kicker">
+                        <span class="status-dot"></span>
+                        GAME DEVELOPMENT DASHBOARD
+                    </div>
+
+
+                    <h1>
+                        Strategy of
+                        <span>Leaders</span>
+                    </h1>
+
+
+                    <h2>
+                        Simulasi kepemimpinan negara
+                        yang mendekati dunia nyata.
+                    </h2>
+
+
+                    <p>
+
+                        Bangun negara, kelola ekonomi, buat keputusan
+                        politik, kembangkan teknologi, dan hadapi
+                        berbagai krisis serta konflik dalam satu
+                        simulasi strategi.
+
+                    </p>
+
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="game.html"
+                            class="btn-primary"
+                        >
+                            <i class="fas fa-gamepad"></i>
+                            Jelajahi Game
+                        </a>
+
+
+                        <a
+                            href="https://gamejolt.com/get/build?game=1067230&build=2015790"
+                            class="btn-secondary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fas fa-download"></i>
+                            Download Game
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GAME LOGO -->
+                <div class="dashboard-hero-visual">
+
+                    <div class="dashboard-logo-frame">
+
+                        <img
+                            src="assets/sol.png"
+                            alt="Strategy of Leaders Logo"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 GAME STATUS
+            ========================== -->
+            <section class="dashboard-status reveal">
+
+                <div class="dashboard-stat">
+
+                    <div class="dashboard-stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            70%
+                        </strong>
+
+                        <span>
+                            Development Progress
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="dashboard-stat-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            50+
+                        </strong>
+
+                        <span>
+                            Core Systems
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="dashboard-stat-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            20
+                        </strong>
+
+                        <span>
+                            Language UI
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stat">
+
+                    <div class="dashboard-stat-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            ∞
+                        </strong>
+
+                        <span>
+                            Scenario Potential
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 GAME VERSION
+            ========================== -->
+            <section class="dashboard-version reveal">
+
+                <div>
+
+                    <div class="kicker">
+                        <i class="fas fa-microchip"></i>
+                        CURRENT BUILD
+                    </div>
+
+                    <h2>
+                        Version
+                        <span>2.10.0</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="version-status">
+
+                    <span class="version-dot"></span>
+
+                    <div>
+
+                        <strong>
+                            ACTIVE DEVELOPMENT
+                        </strong>
+
+                        <small>
+                            Sistem dan fitur terus dikembangkan.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 GAME SYSTEM
+            ========================== -->
+            <section class="section reveal">
+
+                <div class="dashboard-section-header">
+
+                    <div>
+
+                        <div class="kicker">
+                            <i class="fas fa-server"></i>
+                            GAME SYSTEM
+                        </div>
+
+                        <h2>
+                            Sistem yang
+                            <span>Saling Terhubung.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        Keputusan ekonomi, populasi, teknologi,
+                        pembangunan, diplomasi, dan pertahanan
+                        dibuat saling terhubung untuk menciptakan
+                        simulasi negara yang lebih dinamis.
+
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-system-grid">
+
+
+                    <!-- PAJAK -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+
+                        <h3>
+                            Pajak & Ekonomi
+                        </h3>
+
+                        <p>
+                            Atur pajak, pemasukan, pengeluaran,
+                            investasi, dan arah ekonomi nasional.
+                        </p>
+
+                    </article>
+
+
+                    <!-- POPULASI -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+
+                        <h3>
+                            Populasi
+                        </h3>
+
+                        <p>
+                            Kelola jumlah populasi, pertumbuhan,
+                            kondisi sosial, dan kebutuhan masyarakat.
+                        </p>
+
+                    </article>
+
+
+                    <!-- RESEARCH -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+
+                        <h3>
+                            Research
+                        </h3>
+
+                        <p>
+                            Kembangkan teknologi dan kemampuan
+                            baru untuk meningkatkan kekuatan negara.
+                        </p>
+
+                    </article>
+
+
+                    <!-- INFRASTRUCTURE -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <h3>
+                            Infrastruktur
+                        </h3>
+
+                        <p>
+                            Bangun berbagai fasilitas untuk
+                            mendukung perkembangan nasional.
+                        </p>
+
+                    </article>
+
+
+                    <!-- DEFENSE -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+
+                        <h3>
+                            Pertahanan
+                        </h3>
+
+                        <p>
+                            Rekrut tentara, kelola kekuatan militer,
+                            dan pertahankan keamanan negara.
+                        </p>
+
+                    </article>
+
+
+                    <!-- INFLATION -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <h3>
+                            Inflasi
+                        </h3>
+
+                        <p>
+                            Kondisi inflasi akan memengaruhi ekonomi,
+                            harga, dan berbagai keputusan nasional.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 DEVELOPMENT INFO
+            ========================== -->
+            <section class="development-panel reveal">
+
+                <div class="development-info">
+
+                    <div class="kicker">
+                        <i class="fas fa-terminal"></i>
+                        DEVELOPMENT STATUS
+                    </div>
+
+
+                    <h2>
+                        Still
+                        <span>Building.</span>
+                    </h2>
+
+
+                    <p>
+
+                        Strategy of Leaders masih berada dalam
+                        pengembangan aktif. Sistem, mekanik permainan,
+                        konten, dan pengalaman pengguna akan terus
+                        diperbarui seiring perkembangan proyek.
+
+                    </p>
+
+                </div>
+
+
+                <div class="development-progress">
+
+                    <div class="progress-header">
+
+                        <span>
+                            Overall Progress
+                        </span>
+
+                        <strong>
+                            70%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dashboard-progress">
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="footer">
+
+            <span>
+                ©
+                <span id="year"></span>
+                Madzelclaive Developer
+            </span>
+
+
+            <span>
+                Strategy of Leaders
+                <i class="fas fa-circle"></i>
+                Indonesia
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- TOAST -->
+    <div
+        id="toast"
+        class="toast"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto"
+        src="assets/ambient-01.wav"
+    ></audio>
+
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+
+
+    <!-- PAGE SCRIPT -->
+    <script>
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        const currentPage =
+            window.location.pathname.split("/").pop()
+            || "index.html";
+
+
+        document
+            .querySelectorAll(".nav a")
+            .forEach(link => {
+
+                const linkPage =
+                    link.getAttribute("href");
+
+                link.classList.toggle(
+                    "active",
+                    linkPage === currentPage
+                );
+
+            });
+
+    </script>
+
+</body>
+</html>

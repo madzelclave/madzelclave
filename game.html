@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#05080d">
+
+    <!-- SEO -->
+    <meta
+        name="description"
+        content="Strategy of Leaders adalah game simulasi strategi kepemimpinan negara yang dikembangkan oleh Madzelclaive Developer."
+    >
+
+    <meta
+        name="author"
+        content="Madzelclaive Developer"
+    >
+
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="https://madzelclave.netlify.app/md.png"
+    >
+
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:url"
+        content="https://madzelclave.netlify.app/game.html"
+    >
+
+    <meta
+        property="og:title"
+        content="Strategy of Leaders — Madzelclaive Developer"
+    >
+
+    <meta
+        property="og:description"
+        content="Game simulasi strategi kepemimpinan negara dengan sistem ekonomi, diplomasi, pembangunan, teknologi, dan pertahanan."
+    >
+
+    <meta
+        property="og:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+    <meta
+        property="og:image:width"
+        content="1080"
+    >
+
+    <meta
+        property="og:image:height"
+        content="1080"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Madzelclaive Developer"
+    >
+
+
+    <!-- TWITTER CARD -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Strategy of Leaders — Madzelclaive Developer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Game simulasi strategi kepemimpinan negara."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+
+    <title>
+        Tentang Game — Madzelclaive Developer
+    </title>
+
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+
+        <!-- BRAND -->
+        <div class="brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <div>
+
+                <strong>
+                    Madzelclaive
+                </strong>
+
+                <span>
+                    DEVELOPER INDONESIA
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+
+
+            <a href="index.html">
+
+                <i class="fas fa-home"></i>
+
+                <span>
+                    Beranda
+                </span>
+
+            </a>
+
+
+            <a
+                href="game.html"
+                class="active"
+            >
+
+                <i class="fas fa-gamepad"></i>
+
+                <span>
+                    Tentang Game
+                </span>
+
+            </a>
+
+
+            <a href="dashboard.html">
+
+                <i class="fas fa-desktop"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="contact.html">
+
+                <i class="fas fa-envelope"></i>
+
+                <span>
+                    Kontak
+                </span>
+
+            </a>
+
+
+            <a href="privacy.html">
+
+                <i class="fas fa-shield-alt"></i>
+
+                <span>
+                    Privacy Policy
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- SIDEBAR TOOLS -->
+        <div class="side-tools">
+
+
+            <!-- THEME -->
+            <button
+                class="tool"
+                id="themeBtn"
+                type="button"
+            >
+
+                <span>
+                    ☾ / ☀
+                </span>
+
+                <span>
+                    Theme
+                </span>
+
+            </button>
+
+
+            <!-- MUSIC -->
+            <button
+                class="tool"
+                id="musicBtn"
+                type="button"
+            >
+
+                <span>
+                    <i class="fas fa-music"></i>
+                </span>
+
+                <span>
+                    Music: ON
+                </span>
+
+            </button>
+
+
+            <!-- MUSIC SELECT -->
+            <select
+                class="tool"
+                id="musicSelect"
+                aria-label="Pilih musik"
+            >
+
+                <option value="assets/ambient-01.wav">
+                    Ambient Command
+                </option>
+
+                <option value="assets/ambient-02.wav">
+                    Strategic Horizon
+                </option>
+
+            </select>
+
+
+            <!-- LANGUAGE -->
+            <div class="tool language-tool">
+
+                <span>
+
+                    <i class="fas fa-globe"></i>
+
+                    Language
+
+                </span>
+
+
+                <div class="lang">
+
+                    <button
+                        type="button"
+                        data-lang="id"
+                        class="active-lang"
+                    >
+                        ID
+                    </button>
+
+
+                    <button
+                        type="button"
+                        data-lang="en"
+                    >
+                        EN
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MOBILE HEADER
+    ========================== -->
+    <header class="mobile-top">
+
+
+        <div class="mobile-brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <strong>
+                Madzelclaive Developer
+            </strong>
+
+        </div>
+
+
+        <button
+            class="hamb"
+            id="menuBtn"
+            type="button"
+            aria-label="Buka menu"
+        >
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="main">
+
+
+        <div class="page">
+
+
+            <!-- =========================
+                 GAME INTRO
+            ========================== -->
+            <section
+                class="section reveal game-intro"
+            >
+
+
+                <div class="game-intro-grid">
+
+
+                    <!-- GAME INFO -->
+                    <div class="game-intro-content">
+
+
+                        <div class="kicker">
+
+                            <span class="status-dot"></span>
+
+                            ABOUT THE GAME
+
+                        </div>
+
+
+                        <h1 class="game-title">
+
+                            Strategy of
+
+                            <span>
+                                Leaders
+                            </span>
+
+                        </h1>
+
+
+                        <p class="game-description">
+
+                            Strategy of Leaders adalah game simulasi strategi
+                            yang memungkinkan pemain memimpin sebuah negara
+                            dan menentukan arah masa depannya.
+
+                        </p>
+
+
+                        <p class="game-description">
+
+                            Kelola ekonomi, pemerintahan, teknologi,
+                            pembangunan, diplomasi, populasi, pertahanan,
+                            inflasi, serta berbagai konflik dan keputusan
+                            strategis.
+
+                        </p>
+
+
+                        <div class="game-actions">
+
+
+                            <a
+                                href="dashboard.html"
+                                class="btn-secondary"
+                            >
+
+                                <i class="fas fa-chart-line"></i>
+
+                                View Dashboard
+
+                            </a>
+
+
+                            <a
+                                href="https://gamejolt.com/get/build?game=1067230&build=2015790"
+                                class="btn-primary"
+                            >
+
+                                <i class="fas fa-download"></i>
+
+                                Download Game
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- GAME LOGO -->
+                    <div class="game-intro-logo">
+
+                        <img
+                            src="assets/game-logo.svg"
+                            alt="Strategy of Leaders Logo"
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                 DEVELOPMENT PROGRESS
+            ========================== -->
+            <section
+                class="section reveal"
+            >
+
+
+                <div class="section-top">
+
+                    <div>
+
+                        <div class="kicker">
+
+                            <i class="fas fa-code-branch"></i>
+
+                            DEVELOPMENT STATUS
+
+                        </div>
+
+
+                        <h2>
+
+                            Development
+
+                            <span>
+                                Progress
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <div class="version-badge">
+
+                        Version 2.10.0
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="progress-card">
+
+
+                    <div class="progress-info">
+
+                        <div>
+
+                            <strong>
+                                Current Development
+                            </strong>
+
+                            <span>
+                                Core systems and gameplay development
+                            </span>
+
+                        </div>
+
+
+                        <strong class="progress-percent">
+
+                            70%
+
+                        </strong>
+
+
+                    </div>
+
+
+                    <div class="progress">
+
+                        <i></i>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                 GAME SYSTEMS
+            ========================== -->
+            <section
+                class="section reveal"
+            >
+
+
+                <div class="section-top">
+
+
+                    <div>
+
+                        <div class="kicker">
+
+                            <i class="fas fa-microchip"></i>
+
+                            GAME SYSTEM
+
+                        </div>
+
+
+                        <h2>
+
+                            Core
+
+                            <span>
+                                Systems
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p class="section-description">
+
+                        Setiap keputusan dalam permainan saling
+                        terhubung, mulai dari ekonomi hingga pertahanan.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="system-grid">
+
+
+                    <!-- ECONOMY -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-coins"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Pajak & Ekonomi
+                        </h3>
+
+
+                        <p>
+
+                            Atur pajak, pemasukan, pengeluaran,
+                            investasi, dan arah ekonomi nasional.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- POPULATION -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-users"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Populasi
+                        </h3>
+
+
+                        <p>
+
+                            Kelola populasi, pertumbuhan,
+                            dan kondisi sosial masyarakat.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- RESEARCH -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-flask"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Research
+                        </h3>
+
+
+                        <p>
+
+                            Kembangkan teknologi dan
+                            kemampuan baru untuk negara.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- INFRASTRUCTURE -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-building"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Infrastruktur
+                        </h3>
+
+
+                        <p>
+
+                            Bangun fasilitas dan infrastruktur
+                            untuk perkembangan nasional.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- DEFENSE -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-shield-halved"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Pertahanan
+                        </h3>
+
+
+                        <p>
+
+                            Rekrut pasukan dan kelola kekuatan
+                            pertahanan negara.
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- INFLATION -->
+                    <article class="system-card">
+
+                        <div class="system-icon">
+
+                            <i class="fas fa-chart-line"></i>
+
+                        </div>
+
+
+                        <h3>
+                            Inflasi
+                        </h3>
+
+
+                        <p>
+
+                            Kondisi ekonomi dan inflasi
+                            memengaruhi keputusan nasional.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                 GAMEPLAY SHOWCASE
+            ========================== -->
+            <section
+                class="section reveal"
+            >
+
+
+                <div class="section-top">
+
+
+                    <div>
+
+                        <div class="kicker">
+
+                            <i class="fas fa-gamepad"></i>
+
+                            GAMEPLAY
+
+                        </div>
+
+
+                        <h2>
+
+                            Cuplikan
+
+                            <span>
+                                Permainan
+                            </span>
+
+                        </h2>
+
+                    </div>
+
+
+                    <p class="section-description">
+
+                        Beberapa sistem utama yang dapat dimainkan
+                        dan dikembangkan dalam Strategy of Leaders.
+
+                    </p>
+
+
+                </div>
+
+
+                <div class="gameplay-grid">
+
+
+                    <!-- EKONOMI -->
+                    <article class="gameplay-card">
+
+                        <div class="gameplay-image">
+
+                            <img
+                                src="assets/ekonomi.jpg"
+                                alt="Ekonomi Nasional"
+                            >
+
+                        </div>
+
+
+                        <div class="gameplay-content">
+
+                            <div class="gameplay-number">
+
+                                01
+
+                            </div>
+
+
+                            <h3>
+                                Ekonomi Nasional
+                            </h3>
+
+
+                            <p>
+
+                                Kelola pajak, pemasukan,
+                                investasi, inflasi,
+                                dan ekonomi negara.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- INFRASTRUCTURE -->
+                    <article class="gameplay-card">
+
+                        <div class="gameplay-image">
+
+                            <img
+                                src="assets/infrastruktur1.jpg"
+                                alt="Pembangunan Infrastruktur"
+                            >
+
+                        </div>
+
+
+                        <div class="gameplay-content">
+
+                            <div class="gameplay-number">
+
+                                02
+
+                            </div>
+
+
+                            <h3>
+                                Infrastruktur
+                            </h3>
+
+
+                            <p>
+
+                                Bangun fasilitas, industri,
+                                dan berbagai infrastruktur
+                                nasional.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DIPLOMACY -->
+                    <article class="gameplay-card">
+
+                        <div class="gameplay-image">
+
+                            <img
+                                src="assets/perdagangan.jpg"
+                                alt="Diplomasi Negara"
+                            >
+
+                        </div>
+
+
+                        <div class="gameplay-content">
+
+                            <div class="gameplay-number">
+
+                                03
+
+                            </div>
+
+
+                            <h3>
+                                Diplomasi
+                            </h3>
+
+
+                            <p>
+
+                                Kelola hubungan antarnegara
+                                dan buat keputusan strategis.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DEFENSE -->
+                    <article class="gameplay-card">
+
+                        <div class="gameplay-image">
+
+                            <img
+                                src="assets/tentara.jpg"
+                                alt="Pertahanan Negara"
+                            >
+
+                        </div>
+
+
+                        <div class="gameplay-content">
+
+                            <div class="gameplay-number">
+
+                                04
+
+                            </div>
+
+
+                            <h3>
+                                Pertahanan
+                            </h3>
+
+
+                            <p>
+
+                                Rekrut pasukan dan kelola
+                                kekuatan pertahanan negara.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- WAR -->
+                    <article class="gameplay-card">
+
+                        <div class="gameplay-image">
+
+                            <img
+                                src="assets/deklarasi-perang.jpg"
+                                alt="Deklarasi Perang"
+                            >
+
+                        </div>
+
+
+                        <div class="gameplay-content">
+
+                            <div class="gameplay-number">
+
+                                05
+
+                            </div>
+
+
+                            <h3>
+                                Deklarasi Perang
+                            </h3>
+
+
+                            <p>
+
+                                Ketika hubungan luar negeri
+                                memburuk, konflik dan perang
+                                dapat terjadi.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =========================
+                 FINAL CTA
+            ========================== -->
+            <section
+                class="final-cta reveal"
+            >
+
+
+                <div>
+
+                    <span>
+                        READY TO LEAD?
+                    </span>
+
+
+                    <h2>
+                        Build Your Nation.
+                    </h2>
+
+
+                    <p>
+
+                        Mulai perjalananmu dan
+                        tentukan masa depan negara.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://gamejolt.com/get/build?game=1067230&build=2015790"
+                    class="btn-primary"
+                >
+
+                    Download Now
+
+                    <i class="fas fa-download"></i>
+
+                </a>
+
+
+            </section>
+
+
+        </div>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="footer">
+
+
+            <span>
+
+                ©
+                <span id="year"></span>
+
+                Madzelclaive Developer
+
+            </span>
+
+
+            <span>
+
+                Strategy of Leaders
+
+                <i class="fas fa-circle"></i>
+
+                Indonesia
+
+            </span>
+
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- TOAST -->
+    <div
+        id="toast"
+        class="toast"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto"
+        src="assets/ambient-01.wav"
+    ></audio>
+
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+
+
+    <!-- YEAR + ACTIVE NAV -->
+    <script>
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+
+        const currentPage =
+            window.location.pathname
+                .split("/")
+                .pop() || "index.html";
+
+
+        const navLinks =
+            document.querySelectorAll(".nav a");
+
+
+        navLinks.forEach(link => {
+
+            const linkPage =
+                link.getAttribute("href");
+
+
+            if (linkPage === currentPage) {
+
+                link.classList.add("active");
+
+            } else {
+
+                link.classList.remove("active");
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+</html>

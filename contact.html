@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#05080d">
+
+    <!-- SEO -->
+    <meta
+        name="description"
+        content="Hubungi Madzelclaive Developer untuk informasi mengenai Strategy of Leaders, pengembangan game, website, dan project digital."
+    >
+
+    <meta
+        name="author"
+        content="Madzelclaive Developer"
+    >
+
+    <!-- FAVICON -->
+    <link
+        rel="icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="shortcut icon"
+        href="https://madzelclave.netlify.app/favicon.ico"
+        type="image/x-icon"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="https://madzelclave.netlify.app/md.png"
+    >
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:url"
+        content="https://madzelclave.netlify.app/contact.html"
+    >
+
+    <meta
+        property="og:title"
+        content="Kontak — Madzelclaive Developer"
+    >
+
+    <meta
+        property="og:description"
+        content="Hubungi Madzelclaive Developer melalui berbagai platform resmi."
+    >
+
+    <meta
+        property="og:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+    <meta
+        property="og:image:width"
+        content="1080"
+    >
+
+    <meta
+        property="og:image:height"
+        content="1080"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Madzelclaive Developer"
+    >
+
+    <!-- TWITTER -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Kontak — Madzelclaive Developer"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Hubungi Madzelclaive Developer melalui platform resmi."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://madzelclave.netlify.app/md.png"
+    >
+
+    <title>
+        Kontak — Madzelclaive Developer
+    </title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <!-- MAIN CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =================================
+         SIDEBAR
+    ================================== -->
+    <aside
+        class="sidebar"
+        id="sidebar"
+    >
+
+        <!-- BRAND -->
+        <div class="brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <div>
+
+                <strong>
+                    Madzelclaive
+                </strong>
+
+                <span>
+                    DEVELOPER INDONESIA
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav">
+
+            <a href="index.html">
+
+                <i class="fas fa-home"></i>
+
+                <span>
+                    Beranda
+                </span>
+
+            </a>
+
+
+            <a href="game.html">
+
+                <i class="fas fa-gamepad"></i>
+
+                <span>
+                    Tentang Game
+                </span>
+
+            </a>
+
+
+            <a href="dashboard.html">
+
+                <i class="fas fa-desktop"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="active"
+            >
+
+                <i class="fas fa-envelope"></i>
+
+                <span>
+                    Kontak
+                </span>
+
+            </a>
+
+
+            <a href="privacy.html">
+
+                <i class="fas fa-shield-alt"></i>
+
+                <span>
+                    Privacy Policy
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR TOOLS -->
+        <div class="side-tools">
+
+            <!-- THEME -->
+            <button
+                class="tool"
+                id="themeBtn"
+                type="button"
+                aria-label="Ganti tema"
+            >
+
+                <span>
+
+                    <i class="fas fa-circle-half-stroke"></i>
+
+                    Theme
+
+                </span>
+
+                <span id="themeIcon">
+                    ☾
+                </span>
+
+            </button>
+
+
+            <!-- MUSIC -->
+            <button
+                class="tool"
+                id="musicBtn"
+                type="button"
+                aria-pressed="true"
+            >
+
+                <span>
+
+                    <i class="fas fa-music"></i>
+
+                    Music
+
+                </span>
+
+                <span id="musicStatus">
+                    ON
+                </span>
+
+            </button>
+
+
+            <!-- MUSIC SELECT -->
+            <select
+                class="tool music-select"
+                id="musicSelect"
+                aria-label="Pilih musik"
+            >
+
+                <option value="assets/ambient-01.wav">
+                    Ambient Command
+                </option>
+
+                <option value="assets/ambient-02.wav">
+                    Strategic Horizon
+                </option>
+
+            </select>
+
+
+            <!-- LANGUAGE -->
+            <div class="tool language-tool">
+
+                <span>
+
+                    <i class="fas fa-globe"></i>
+
+                    Language
+
+                </span>
+
+
+                <div class="lang">
+
+                    <button
+                        type="button"
+                        data-lang="id"
+                    >
+                        ID
+                    </button>
+
+                    <button
+                        type="button"
+                        data-lang="en"
+                    >
+                        EN
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =================================
+         MOBILE HEADER
+    ================================== -->
+    <header class="mobile-top">
+
+        <div class="mobile-brand">
+
+            <img
+                src="md.png"
+                alt="Madzelclaive Logo"
+            >
+
+            <strong>
+                Madzelclaive Developer
+            </strong>
+
+        </div>
+
+
+        <button
+            class="hamb"
+            id="menuBtn"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+        >
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </header>
+
+
+    <!-- =================================
+         MAIN
+    ================================== -->
+    <main class="main">
+
+        <div class="page">
+
+            <!-- CONTACT HERO -->
+            <section class="section reveal">
+
+                <div class="kicker">
+
+                    <span class="status-dot"></span>
+
+                    CONTACT
+
+                </div>
+
+
+                <h1>
+
+                    Get In
+
+                    <span>
+                        Touch.
+                    </span>
+
+                </h1>
+
+
+                <p class="section-description">
+
+                    Jika ingin menghubungi Madzelclaive Developer,
+                    kamu dapat menggunakan salah satu platform
+                    resmi yang tersedia di bawah.
+
+                </p>
+
+            </section>
+
+
+            <!-- CONTACT GRID -->
+            <section class="section reveal">
+
+                <div class="contact-grid">
+
+
+                    <!-- EMAIL -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fas fa-envelope"></i>
+                            EMAIL
+                        </b>
+
+                        <span>
+                            Untuk pertanyaan,
+                            informasi project,
+                            atau kerja sama.
+                        </span>
+
+                        <p>
+
+                            <a href="mailto:madzelclaive@gmail.com">
+                                madzelclaive@gmail.com
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- WHATSAPP -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fab fa-whatsapp"></i>
+                            WHATSAPP
+                        </b>
+
+                        <span>
+                            Hubungi secara langsung
+                            melalui WhatsApp.
+                        </span>
+
+                        <p>
+
+                            <a
+                                href="https://wa.me/6283890256854"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                +62 838-9025-6854
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- TIKTOK -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fab fa-tiktok"></i>
+                            TIKTOK
+                        </b>
+
+                        <span>
+                            Ikuti perkembangan project
+                            dan konten terbaru.
+                        </span>
+
+                        <p>
+
+                            <a
+                                href="https://tiktok.com/@Madzelclaive"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                @Madzelclaive
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- INSTAGRAM -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fab fa-instagram"></i>
+                            INSTAGRAM
+                        </b>
+
+                        <span>
+                            Update project dan aktivitas
+                            Madzelclaive Developer.
+                        </span>
+
+                        <p>
+
+                            <a
+                                href="https://www.instagram.com/madzelclaive"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                @Madzelclaive
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- FACEBOOK -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fab fa-facebook"></i>
+                            FACEBOOK
+                        </b>
+
+                        <span>
+                            Informasi dan update melalui
+                            halaman resmi.
+                        </span>
+
+                        <p>
+
+                            <a
+                                href="https://www.facebook.com/MadzELpecador"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Madzelclaive Developer
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                    <!-- YOUTUBE -->
+                    <article class="contact">
+
+                        <b>
+                            <i class="fab fa-youtube"></i>
+                            YOUTUBE
+                        </b>
+
+                        <span>
+                            Video dan perkembangan
+                            Strategy of Leaders.
+                        </span>
+
+                        <p>
+
+                            <a
+                                href="https://www.youtube.com/@MadzExcode"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Madzelclaive Developer
+                            </a>
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- FINAL CTA -->
+            <section class="final-cta reveal">
+
+                <div>
+
+                    <span>
+                        HAVE A QUESTION?
+                    </span>
+
+                    <h2>
+                        Let's Connect.
+                    </h2>
+                    <p>
+                        Pilih platform yang paling nyaman
+                        untuk menghubungi saya.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="mailto:madzelclaive@gmail.com"
+                    class="btn-primary"
+                >
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Send Email
+
+                </a>
+
+            </section>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <span>
+
+                ©
+
+                <span id="year"></span>
+
+                Madzelclaive Developer
+
+            </span>
+
+
+            <span>
+
+                Strategy of Leaders
+
+                <i class="fas fa-circle"></i>
+
+                Indonesia
+
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- TOAST -->
+    <div
+        id="toast"
+        class="toast"
+        aria-live="polite"
+    ></div>
+
+
+    <!-- BACKGROUND MUSIC -->
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto"
+        src="assets/ambient-01.wav"
+    ></audio>
+
+
+    <!-- MAIN SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
